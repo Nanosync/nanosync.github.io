@@ -89,6 +89,11 @@ html, body {
 .notification-box {
   padding: 3em;
   background-color: #fff;
+  border-radius: 0.25em;
+}
+
+.notification-box h1 {
+  color: #053764;
 }
 
 .padding {

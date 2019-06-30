@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link href="./css/styles.css" type="text/css" rel="stylesheet">
+    <link href="/css/styles.css" type="text/css" rel="stylesheet">
     <title>Benedict Pak</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143052141-1"></script>
     <script>
@@ -196,7 +196,7 @@
           <div class="col-12">
             <h2>Contact</h2>
             <hr class="my-4">
-            <form action="#" method="POST" role="form">
+            <form id="contactform" action="https://formsubmit.io/send/6854c815-121d-4750-9031-bf75b86cd1be" method="POST" role="form">
               <div class="form-group row">
                 <div class="col-sm-12">
                   <input type="text" class="form-control" id="name" name="name" placeholder="Name">
@@ -209,11 +209,13 @@
               </div>
               <div class="form-group row">
                 <div class="col-sm-12">
-                  <textarea class="form-control" id="message" name="message" rows="8" placeholder="Message"></textarea>
+                  <textarea class="form-control" id="comment" name="comment" rows="8" placeholder="Message"></textarea>
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-sm-12 text-right">
+                  <input name="_redirect" type="hidden" id="name" value="https://benedictpak.com/success.html">
+                  <input name="_formsubmit_id" type="text" style="display:none">
                   <button type="submit" class="btn btn-primary btn-block mb-2">Submit</button>
                 </div>
               </div>

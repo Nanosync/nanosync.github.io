@@ -86,6 +86,11 @@ html, body {
   transition: 0.25s ease-in;
 }
 
+.notification-box {
+  padding: 3em;
+  background-color: #fff;
+}
+
 .padding {
   padding-top: 2rem;
 }

@@ -196,9 +196,13 @@ footer {
   font-size: 1.3em;
 }
 
+footer .fa {
+  font-size: 2em;
+}
+
 footer .padding {
-  padding-top: 0.8em;
-  padding-bottom: 0.2em;
+  padding-top: 0.4em;
+  padding-bottom: 0.75em;
 }
 
 footer a, footer a:hover, footer a:visited, footer:active {

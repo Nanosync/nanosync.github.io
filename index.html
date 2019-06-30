@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Serif+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="preload" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"></noscript>
     <link href="/css/styles.css" type="text/css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
@@ -33,7 +33,7 @@
         <!-- Nav -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-custom sticky-top">
           <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDefault">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarDefault">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarDefault">
@@ -102,7 +102,7 @@
       <div id="arrowContainer" class="container">
           <div class="row">
             <div class="col-md-12 text-center bottom-arrow">
-              <a href="#projects"><i class="fa fa-angle-down"></i></a>
+              <a href="#projects"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -250,7 +250,7 @@
       <div class="container-fluid padding">
         <div class="row text-center">
           <div class="col-12">
-            <a href="#top"><p>Go to top</p></a>
+            <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>

@@ -227,6 +227,10 @@ footer a:hover {
 
 /** Media Queries **/
 @media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
   .banner-text {
     font-size: 1em;
   }

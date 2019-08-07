@@ -43,7 +43,7 @@ body {
 }
 
 .banner-text {
-  padding-top: 15%;
+  padding-top: 8%;
   color: #fff;
   font-size: 1.5em;
   letter-spacing: 0.075em;
@@ -109,7 +109,7 @@ body {
 
 #socialContainer .innerContainer {
   padding-top: 2rem;
-  padding-bottom: 5em;
+  padding-bottom: 5rem;
 }
 
 /** Icons **/
@@ -204,6 +204,7 @@ footer .fa {
 footer .padding {
   padding-top: 0.4em;
   padding-bottom: 0.75em;
+  margin-top: 2em;
 }
 
 footer a,
@@ -229,14 +230,58 @@ footer a:hover {
   padding-bottom: 3em;
 }
 
+.project-item {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  max-width: 20rem;
+  margin-bottom: 30px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.project-item img {
+  min-width: 320px;
+}
+
+.project-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  padding: 1em;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  line-height: 1.2em;
+  font-size: 0.95em;
+}
+
+.project-item:hover .project-item-caption {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-item:hover img {
+  opacity: 0.2;
+}
+
 /** Media Queries **/
 @media (max-width: 576px) {
   body {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .banner-text {
-    font-size: 1em;
+    padding-top: 1em;
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 0.075em;
+  }
+
+  #socialContainer .innerContainer {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
   }
 
   .surround {
@@ -249,6 +294,10 @@ footer a:hover {
   }
 
   .about p .lead {
+    font-size: 1.2em;
+  }
+
+  .project-item-caption {
     font-size: 1.2em;
   }
 }

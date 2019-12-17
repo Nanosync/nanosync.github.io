@@ -237,7 +237,7 @@ footer a:hover {
   max-width: 20rem;
   margin-bottom: 30px;
   border-radius: 0.5rem;
-  overflow: hidden;
+  overflow: visible;
   transition: opacity 0.2s, visibility 0.2s;
 }
 
@@ -260,10 +260,11 @@ footer a:hover {
 .project-item:hover .project-item-caption {
   opacity: 1;
   visibility: visible;
+  background-color: rgba(0, 0, 0, 0.1)
 }
 
 .project-item:hover img {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 /** Media Queries **/
